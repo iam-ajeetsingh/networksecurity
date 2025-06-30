@@ -1,0 +1,16 @@
+[ 2025-06-30 00:55:31,645 ] 13 root - INFO - Data Ingestion started with config: <networksecurity.entity.config_entity.DataIngestionConfig object at 0x0000016ABD6A1870>
+[ 2025-06-30 00:55:34,406 ] 69 root - INFO - Performed train test split on the dataframe
+[ 2025-06-30 00:55:34,406 ] 71 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-06-30 00:55:34,406 ] 79 root - INFO - Exporting train and test file path.
+[ 2025-06-30 00:55:34,442 ] 88 root - INFO - Exported train and test file path.
+[ 2025-06-30 00:55:34,444 ] 15 root - INFO - MAIN-- Data Ingestion Completed successfully.
+[ 2025-06-30 00:55:34,449 ] 22 root - INFO - Data Validation started with config: <networksecurity.entity.config_entity.DataValidationConfig object at 0x0000016AFFCCB3D0>
+[ 2025-06-30 00:55:34,450 ] 86 root - INFO - Initiating data validation
+[ 2025-06-30 00:55:34,567 ] 40 root - INFO - Expected number of columns: 31
+[ 2025-06-30 00:55:34,567 ] 41 root - INFO - Actual number of columns: 31
+[ 2025-06-30 00:55:34,568 ] 43 root - INFO - Number of columns validation passed
+[ 2025-06-30 00:55:34,568 ] 40 root - INFO - Expected number of columns: 31
+[ 2025-06-30 00:55:34,568 ] 41 root - INFO - Actual number of columns: 31
+[ 2025-06-30 00:55:34,568 ] 43 root - INFO - Number of columns validation passed
+[ 2025-06-30 00:55:34,682 ] 125 root - INFO - Data validation completed successfully
+[ 2025-06-30 00:55:34,682 ] 24 root - INFO - MAIN-- Data Validation Completed successfully.
