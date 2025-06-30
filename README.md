@@ -41,5 +41,9 @@
 #### Data Validation Workflow is as follows: 
 ![image](https://github.com/user-attachments/assets/b5ac7e59-0748-4a83-b7fa-1ef68ba5c56c)
 
+#### Data Validation Log File : 
+![image](https://github.com/user-attachments/assets/6cd09281-9402-4dc8-b73e-585aac6c9327)
 
+#### Data Ingestion and Data Validation Artifacts : 
+![image](https://github.com/user-attachments/assets/21fddb2d-e3bc-44aa-8c99-a34af874ce76)  
 
