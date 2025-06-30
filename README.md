@@ -28,3 +28,18 @@
 ![image](https://github.com/user-attachments/assets/c82928e0-31df-4e86-b25c-f565107a0517)
 
 
+### Step 3 : Data Validation Process :
+
+   1. Checking for same schema in the new data:
+      - same no. of columns/ features 
+      - same datatypes for each column/feature
+   2. Checking for Data Drift in new data: 
+      - checking weather the distribution of data is same as that of training data. or did it change for new data?
+   3. Validate no. of Columns, Numerical Columns Exist or not in the new data?
+   
+   4. Creating Data Validation Report.
+#### Data Validation Workflow is as follows: 
+![image](https://github.com/user-attachments/assets/b5ac7e59-0748-4a83-b7fa-1ef68ba5c56c)
+
+
+
