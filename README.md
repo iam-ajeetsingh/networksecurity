@@ -47,3 +47,24 @@
 #### Data Ingestion and Data Validation Artifacts : 
 ![image](https://github.com/user-attachments/assets/21fddb2d-e3bc-44aa-8c99-a34af874ce76)  
 
+### Step 4 : Data Transformation Process :
+- There are following main components : 
+   - Data Transformation Config (contains all File Paths, Directories and Variables)
+   - Data Transforamtion Component
+   - Reading Data from Data Validation Artifacts (train.csv and test.csv)
+   - Data Transformation Step 
+      - Dividing Dependent and Independent Features from Train data
+      - Imputing Null/ NaN values using KNN imputer
+      - Handling Missing Values 
+      - using Feature Engineering Technique-SMOTETomek to handle Data Imbalance. 
+
+   - Data Transformation Artifacts Creation. (train.npy and test.npy)
+
+   Note: (In Feature Engineering : For train data we use fit.transform() and for test data we use only transform() to avoid any Data leakage)
+
+![image](https://github.com/user-attachments/assets/19b2f01b-d4de-4a79-9d2c-92f850ae7154)
+![image](https://github.com/user-attachments/assets/d2273a4a-790d-43f8-afd7-a931f11d4508)
+      
+
+
+
