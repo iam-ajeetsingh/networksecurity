@@ -8,3 +8,17 @@
 [ 2025-06-30 00:54:38,029 ] 230 pygls.protocol.json_rpc - WARNING - Cancel notification for unknown message id "3"
 [ 2025-06-30 00:54:38,139 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 4, "jsonrpc": "2.0", "result": []}
 [ 2025-06-30 00:54:38,388 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 5, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:17,187 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 6, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:17,432 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 7, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:36,672 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 8, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:36,734 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 9, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:36,752 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 10, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:37,093 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 11, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:42,401 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 12, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 01:11:44,277 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 13, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 03:19:25,365 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 14, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 03:19:25,384 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 15, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 03:19:25,983 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 16, "jsonrpc": "2.0", "result": []}
+[ 2025-06-30 10:05:14,912 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 17, "jsonrpc": "2.0", "result": null}
+[ 2025-06-30 10:05:16,812 ] 227 pygls.server - INFO - Shutting down the server
+[ 2025-06-30 10:05:16,815 ] 244 pygls.server - INFO - Closing the event loop.
