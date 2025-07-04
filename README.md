@@ -66,5 +66,16 @@
 ![image](https://github.com/user-attachments/assets/d2273a4a-790d-43f8-afd7-a931f11d4508)
       
 
+### Step 5 : Model Training Process :
+- There are following main components : 
+   - Model Trainer Config (contains all File Paths, Directories and Variables)
+   - Model Trainer Component
+   - Load numpy array data from train.npy and test.npy from Data Transformation artifacts.
+   - Data Transformation Step 
+      - Dividing Dependent and Independent Features from Train data
+      - Imputing Null/ NaN values using KNN imputer
+      - Handling Missing Values 
+      - using Feature Engineering Technique-SMOTETomek to handle Data Imbalance. 
 
+   - Data Transformation Artifacts Creation. (train.npy and test.npy)
 
