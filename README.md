@@ -71,11 +71,4 @@
    - Model Trainer Config (contains all File Paths, Directories and Variables)
    - Model Trainer Component
    - Load numpy array data from train.npy and test.npy from Data Transformation artifacts.
-   - Data Transformation Step 
-      - Dividing Dependent and Independent Features from Train data
-      - Imputing Null/ NaN values using KNN imputer
-      - Handling Missing Values 
-      - using Feature Engineering Technique-SMOTETomek to handle Data Imbalance. 
-
-   - Data Transformation Artifacts Creation. (train.npy and test.npy)
 
