@@ -1,0 +1,10 @@
+artifact_location: file:///D:/Documents/VS%20Code%20workspace/NetworkSecurity/mlruns/0/models/m-6460a567c8794266871699bb49a1e871/artifacts
+creation_timestamp: 1751664870756
+experiment_id: '0'
+last_updated_timestamp: 1751664874770
+model_id: m-6460a567c8794266871699bb49a1e871
+model_type: null
+name: model
+source_run_id: 76bd4c6496b44c299f81a5e9f56f1988
+status: 2
+status_message: null
