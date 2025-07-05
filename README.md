@@ -82,8 +82,9 @@
    - These above models pickle files are presently stored locally but they can be pushed to S3 Bucket if need be. 
 
 
-### Step 6 : Creating an FastAPI application for Model Training using UI
-   - added code of app.py containing the FastAPI App code 
+### Step 6 : Creating a FastAPI application for running the Model Training Pipeline using Web App
+   - creatred a training_pipeline.py to run the Data ingestion --> Data validation --> Data Transformation --> Model Training as a single pipeline.
+   - added code of app.py containing the FastAPI App code to run the above training_pipeline. 
    - can run this app using commadn > uvicorn app:app --reload
    - It runs successfully and now we can train our model using http://127.0.0.1:8000/train 
    
