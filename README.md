@@ -70,5 +70,20 @@
 - There are following main components : 
    - Model Trainer Config (contains all File Paths, Directories and Variables)
    - Model Trainer Component
-   - Load numpy array data from train.npy and test.npy from Data Transformation artifacts.
+         - perform model training on multiple models.
+         - Perform Hyperparameter Tunning 
+         - Evaluate the performance of all the models.
+         - Select the best model.
+         - Log the metrices of the best model into the mLflow experiment tracking remote server on Dagshub.(for each run it adds 2 experiments:  1 for training and 1 for testing)
+         - Push the model to the Local repository.
+   - Final Output of Trainer compoment is : 
+         - model.pkl
+         - preprocessor.pkl
+   - These above models pickle files are presently stored locally but they can be pushed to S3 Bucket if need be. 
 
+
+### Step 6 : Creating an FastAPI application for Model Training using UI
+   - added code of app.py containing the FastAPI App code 
+   - can run this app using commadn > uvicorn app:app --reload
+   - It runs successfully and now we can train our model using http://127.0.0.1:8000/train 
+   

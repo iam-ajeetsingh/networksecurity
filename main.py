@@ -4,8 +4,13 @@ from networksecurity.components.data_transformation import DataTransformation
 from networksecurity.components.model_trainer import ModelTrainer
 from networksecurity.exception.exception import NetworkSecurityException
 from networksecurity.logging.logger import logging
-from networksecurity.entity.config_entity import DataIngestionConfig, TrainingPipelineConfig, DataValidationConfig, DataTransformationConfig, ModelTrainerConfig
-
+from networksecurity.entity.config_entity import (
+    DataIngestionConfig, 
+    TrainingPipelineConfig, 
+    DataValidationConfig, 
+    DataTransformationConfig, 
+    ModelTrainerConfig,
+)
 import sys
 
 if __name__ == "__main__":
