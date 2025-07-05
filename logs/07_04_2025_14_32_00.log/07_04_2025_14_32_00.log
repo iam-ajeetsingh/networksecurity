@@ -1,0 +1,33 @@
+[ 2025-07-04 14:32:03,477 ] 16 root - INFO - Data Ingestion started with config: <networksecurity.entity.config_entity.DataIngestionConfig object at 0x000002D9B672BD90>
+[ 2025-07-04 14:32:05,942 ] 69 root - INFO - Performed train test split on the dataframe
+[ 2025-07-04 14:32:05,942 ] 71 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-07-04 14:32:05,942 ] 79 root - INFO - Exporting train and test file path.
+[ 2025-07-04 14:32:05,981 ] 88 root - INFO - Exported train and test file path.
+[ 2025-07-04 14:32:05,981 ] 18 root - INFO - MAIN-- Data Ingestion Completed successfully.
+[ 2025-07-04 14:32:06,013 ] 25 root - INFO - Data Validation started with config: <networksecurity.entity.config_entity.DataValidationConfig object at 0x000002D9FA7CA110>
+[ 2025-07-04 14:32:06,013 ] 86 root - INFO - Initiating data validation
+[ 2025-07-04 14:32:06,064 ] 40 root - INFO - Expected number of columns: 31
+[ 2025-07-04 14:32:06,064 ] 41 root - INFO - Actual number of columns: 31
+[ 2025-07-04 14:32:06,064 ] 43 root - INFO - Number of columns validation passed
+[ 2025-07-04 14:32:06,064 ] 40 root - INFO - Expected number of columns: 31
+[ 2025-07-04 14:32:06,064 ] 41 root - INFO - Actual number of columns: 31
+[ 2025-07-04 14:32:06,065 ] 43 root - INFO - Number of columns validation passed
+[ 2025-07-04 14:32:06,160 ] 125 root - INFO - Data validation completed successfully
+[ 2025-07-04 14:32:06,160 ] 27 root - INFO - MAIN-- Data Validation Completed successfully.
+[ 2025-07-04 14:32:06,161 ] 32 root - INFO - Data Transformation started with config: {data_transformation_config}
+[ 2025-07-04 14:32:06,161 ] 66 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-07-04 14:32:06,161 ] 68 root - INFO - Starting data transformation
+[ 2025-07-04 14:32:06,176 ] 51 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-07-04 14:32:06,176 ] 56 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-07-04 14:32:06,184 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 14:32:06,187 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 14:32:06,187 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 14:32:06,189 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 14:32:06,190 ] 35 root - INFO - MAIN-- Data Transformation Completed successfully.
+[ 2025-07-04 14:32:06,190 ] 39 root - INFO - Model Training started
+[ 2025-07-04 14:34:37,659 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 14:34:37,660 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 14:34:37,661 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 14:34:37,752 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 14:34:37,752 ] 142 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\07_04_2025_14_32_01\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9907370116794201, precision_score=0.987753463160008, recall_score=0.9937386386588568), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9769357495881383, precision_score=0.9705400981996727, recall_score=0.9834162520729685))
+[ 2025-07-04 14:34:37,759 ] 43 root - INFO - Model Training artifact created

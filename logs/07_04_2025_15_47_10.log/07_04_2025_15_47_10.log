@@ -1,0 +1,39 @@
+[ 2025-07-04 15:47:13,912 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-04 15:47:13,930 ] 107 dagshub - INFO - Accessing as ajeetsinghcet05
+[ 2025-07-04 15:47:14,134 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/repos/ajeetsinghcet05/networksecurity "HTTP/1.1 200 OK"
+[ 2025-07-04 15:47:14,308 ] 1025 httpx - INFO - HTTP Request: GET https://dagshub.com/api/v1/user "HTTP/1.1 200 OK"
+[ 2025-07-04 15:47:14,308 ] 107 dagshub - INFO - Initialized MLflow to track repo "ajeetsinghcet05/networksecurity"
+[ 2025-07-04 15:47:14,308 ] 107 dagshub - INFO - Repository ajeetsinghcet05/networksecurity initialized!
+[ 2025-07-04 15:47:14,308 ] 16 root - INFO - Data Ingestion started with config: <networksecurity.entity.config_entity.DataIngestionConfig object at 0x0000020FA143BD90>
+[ 2025-07-04 15:47:16,842 ] 69 root - INFO - Performed train test split on the dataframe
+[ 2025-07-04 15:47:16,842 ] 71 root - INFO - Exited split_data_as_train_test method of Data_Ingestion class
+[ 2025-07-04 15:47:16,842 ] 79 root - INFO - Exporting train and test file path.
+[ 2025-07-04 15:47:16,876 ] 88 root - INFO - Exported train and test file path.
+[ 2025-07-04 15:47:16,876 ] 18 root - INFO - MAIN-- Data Ingestion Completed successfully.
+[ 2025-07-04 15:47:16,888 ] 25 root - INFO - Data Validation started with config: <networksecurity.entity.config_entity.DataValidationConfig object at 0x0000020FE60AF070>
+[ 2025-07-04 15:47:16,888 ] 86 root - INFO - Initiating data validation
+[ 2025-07-04 15:47:16,991 ] 40 root - INFO - Expected number of columns: 31
+[ 2025-07-04 15:47:16,991 ] 41 root - INFO - Actual number of columns: 31
+[ 2025-07-04 15:47:16,991 ] 43 root - INFO - Number of columns validation passed
+[ 2025-07-04 15:47:16,991 ] 40 root - INFO - Expected number of columns: 31
+[ 2025-07-04 15:47:16,991 ] 41 root - INFO - Actual number of columns: 31
+[ 2025-07-04 15:47:16,991 ] 43 root - INFO - Number of columns validation passed
+[ 2025-07-04 15:47:17,118 ] 125 root - INFO - Data validation completed successfully
+[ 2025-07-04 15:47:17,118 ] 27 root - INFO - MAIN-- Data Validation Completed successfully.
+[ 2025-07-04 15:47:17,118 ] 32 root - INFO - Data Transformation started with config: {data_transformation_config}
+[ 2025-07-04 15:47:17,118 ] 66 root - INFO - Entered initiate_data_transformation method of DataTransformation class
+[ 2025-07-04 15:47:17,118 ] 68 root - INFO - Starting data transformation
+[ 2025-07-04 15:47:17,125 ] 51 root - INFO - Entered get_data_trnasformer_object method of Trnasformation class
+[ 2025-07-04 15:47:17,125 ] 56 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-07-04 15:47:17,142 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 15:47:17,146 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 15:47:17,146 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 15:47:17,147 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 15:47:17,147 ] 35 root - INFO - MAIN-- Data Transformation Completed successfully.
+[ 2025-07-04 15:47:17,147 ] 39 root - INFO - Model Training started
+[ 2025-07-04 15:49:46,145 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 15:49:46,146 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 15:49:46,146 ] 49 root - INFO - Entered the save_object method of Main Utils class
+[ 2025-07-04 15:49:46,153 ] 53 root - INFO - Exited the save_object method of MainUtils class
+[ 2025-07-04 15:49:46,153 ] 145 root - INFO - Model trainer artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\07_04_2025_15_47_11\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=ClassificationMetricArtifact(f1_score=0.9910417715148465, precision_score=0.9881573665194701, recall_score=0.9939430648092066), test_metric_artifact=ClassificationMetricArtifact(f1_score=0.9735537190082645, precision_score=0.96875, recall_score=0.978405315614618))
+[ 2025-07-04 15:49:46,154 ] 43 root - INFO - Model Training artifact created

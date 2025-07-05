@@ -94,4 +94,17 @@
    - It accepts a CSV file, reads it, preprocesses it using the preprocessor object, and then uses the model to predict the target variable.
    - The predicted values are added to the DataFrame and saved to a CSV file in the 'prediction_output' directory.
    - The DataFrame is then converted to an HTML table and returned as a response to be rendered in the browser.
+
+### Step 7 : Pusing Final Model and Model Artifacts to AWS S3 Bucket:
+   - Since this model.pkl file we used is very small in size, so we pushed it to github repo. but for complex models this model.pkl file gets bigger in size(in GBs). 
+   - We need to push these Trained Model.pkl and other artifacts to some other storage and that is why we are using AWS S3 bucket to store them. 
+   - we achieve this my syncing our local Artifacts and final_model directories to the Cloud. 
    
+Note : for connecting to S3 Bucket we are not using S3fs or Boto3 libraries , instead we are using AWS CLI. we can use either one. 
+
+   - created an IAM user testsecurity and created Access Key for CLI
+   - use AWS Configure command to configure the AWS Access key using VSCode CMD : 
+   - Created an S3 Bucket named 'networksecurity'
+   
+
+
