@@ -88,3 +88,6 @@
    - can run this app using commadn > uvicorn app:app --reload
    - It runs successfully and now we can train our model using http://127.0.0.1:8000/train 
    
+
+
+### Step 6 : Creating Batch Prediction Pipeline : 
