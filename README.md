@@ -91,3 +91,7 @@
 
 
 ### Step 6 : Creating Batch Prediction Pipeline : 
+   - It accepts a CSV file, reads it, preprocesses it using the preprocessor object, and then uses the model to predict the target variable.
+   - The predicted values are added to the DataFrame and saved to a CSV file in the 'prediction_output' directory.
+   - The DataFrame is then converted to an HTML table and returned as a response to be rendered in the browser.
+   
