@@ -21,8 +21,11 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier, AdaBoostClassifier
 
 import mlflow
+import joblib
 from urllib.parse import urlparse
 
+import dagshub
+dagshub.init(repo_owner='ajeetsinghcet05', repo_name='networksecurity', mlflow=True)
 
 
 class ModelTrainer:
@@ -42,12 +45,12 @@ class ModelTrainer:
             precision_score=classification_metric.precision_score
             recall_score=classification_metric.recall_score
 
-            
-
             mlflow.log_metric("f1_score",f1_score)
             mlflow.log_metric("precision",precision_score)
             mlflow.log_metric("recall_score",recall_score)
-            mlflow.sklearn.log_model(best_model,"model")
+            #mlflow.sklearn.log_model(best_model,"model")
+            joblib.dump(best_model, "final_model/model.pkl")
+            mlflow.log_artifact("final_model/model.pkl", artifact_path="model")
 
             """
             # Model registry does not work with file store
