@@ -86,6 +86,7 @@
    - creatred a training_pipeline.py to run the Data ingestion --> Data validation --> Data Transformation --> Model Training as a single pipeline.
    - added code of app.py containing the FastAPI App code to run the above training_pipeline. 
    - can run this app using commadn > uvicorn app:app --reload
+   - since i have imported "from uvicorn import run as app_run" in the app.py file, i can run the app.py file just as we run a python script "python app.py ".
    - It runs successfully and now we can train our model using http://127.0.0.1:8000/train 
    
 
@@ -105,6 +106,26 @@ Note : for connecting to S3 Bucket we are not using S3fs or Boto3 libraries , in
    - created an IAM user testsecurity and created Access Key for CLI
    - use AWS Configure command to configure the AWS Access key using VSCode CMD : 
    - Created an S3 Bucket named 'networksecurity'
+   - Model artifacts get pushed to S3 bucket on successful run of app.py file.  
+
+
+### Step 8 : Creating a Docker Image and Pushing it to AWS ECR and Deploying it as a container in Amazon EC2 Instance using GitHub Actions CI/CD pipeline:
+   - 1. Creating a Docker Image 
+      - pulled python:3.10-slim-buster base image 
+      - installed aws CLI and other requirements.txt dependencies 
+      - running the command : "python app.py" to run the app.py file.
+
+   - 2. Created .github\workflows\main.yml file 
+         - added code to run github action of Continuous Integration on each push of code to repo. 
+         - added ignore the code commit/push to following: 
+            - .github/workflows/main.yml
+            - .gitignore
+            - README.md
+            - app.py
+
+   - 3. 
+
+
    
 
 

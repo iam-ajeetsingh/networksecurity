@@ -1,0 +1,31 @@
+name: workflow
+
+on:
+    push:
+        branches:
+            - main
+        paths-ignore:
+            - .github/workflows/main.yml
+            - .gitignore
+            - README.md
+            - app.py
+
+jobs:
+    integration:
+        name: Continuation Integration(CI)
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v3
+
+            - name: Lint code
+              run: echo "Linting Code Repository....."
+              # Can use tools like flake8, pylint, etc. for linting
+
+            - name: Run unit tests
+              run: echo "Running Unit Tests....."
+              # Can use pytest or unittest for running tests
+
+            
+            
+
