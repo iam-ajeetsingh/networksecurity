@@ -115,6 +115,8 @@ Note : for connecting to S3 Bucket we are not using S3fs or Boto3 libraries , in
       - installed aws CLI and other requirements.txt dependencies 
       - running the command : "python app.py" to run the app.py file.
 
+Note: Docker is case-sensitive and The Docker CLI always looks for a file named: 'Dockerfile'. i made a mistake and named it 'DockerFile' and docker could not find this file. 
+
    - 2. Created .github\workflows\main.yml file 
          - added code to run github action of Continuous Integration on each push of code to repo. 
          - added ignore the code commit/push to following: 
@@ -137,6 +139,46 @@ Note : for connecting to S3 Bucket we are not using S3fs or Boto3 libraries , in
             To do this got to -> Github Repo Settings --> Secrets and Variables --> Actions --> Repository Secrets -> new repo secret.
          - Login to Amazon ECR 
 
+Note : Where is the Docker Image Stored Before Being Pushed to ECR?
+- Docker builds the image locally : 
+   - The image is stored on the GitHub Actions runner’s local Docker daemon.
+   - The GitHub runner is a temporary virtual machine (ephemeral) provided by GitHub to execute the workflow.
+   - we can think of this as the image being stored on that VM’s local storage.
+   - GitHub Actions runners are ephemeral. They are temporary, short-lived virtual machines that exist only for the duration of a single workflow run.
+   - After the workflow finishes, the runner is shut down, and the local docker image is automatically discarded.
+   - Each time your workflow starts, GitHub spins up a fresh virtual machine.
+   - It downloads your repository code. It runs all the steps in your workflow.
+   - When the workflow finishes (whether success or failure), the virtual machine is immediately destroyed.
+
+    
+   - 4. Deploying the Docker image to Amazon EC2 Instance:
+         - Created an EC2 instance named 'Networksecurity'
+         - Done the basic pre-requisite setup on EC2 instance. 
+         - For basic Docker Setup In EC2 following commands to be Executed: 
+             - sudo apt-get update -y   (optional)
+             - sudo apt-get upgrade     (Optional)
+             - # Required commands:
+             - curl -fsSL https://get.docker.com -o get-docker.s   
+             - sudo sh get-docker.sh
+             - sudo usermod -aG docker ubuntu
+             - newgrp docker
+
+         - After running all the above command in EC2 instance,
+         - Now we need to create self-hosted runner which will run my Docker image. (got to Settings--> Actions --> Runners --> add new Runner )
+         -  This Runner will act as listener on github repo to listen to any chnages on the github repo. 
+         - In the Process of creating the self-hosted runner i need to run the commands (in EC2 instance)  given there to Download , Configure and Run the runner. Adding a self-hosted runner requires that you download, configure, and execute the GitHub Actions Runner.  
+         - enter name of runner group  - default
+         - enter the name of runner - 'self-hosted'
+         - rest everything is default. 
+         - once you run ./run.sh you get the following terminal output: 
+               ubuntu@ip-172-31-30-67:~/actions-runner$ ./run.sh 
+               √ Connected to GitHub
+               Current runner version: '2.325.0'
+               2025-07-06 23:36:25Z: Listening for Jobs
+         
+         - So now the self-hosted runner is Listening for jobs 
+
+         
 
 
    

@@ -113,3 +113,8 @@
 [ 2025-07-06 02:44:03,624 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 47, "jsonrpc": "2.0", "result": []}
 [ 2025-07-06 02:44:03,625 ] 230 pygls.protocol.json_rpc - WARNING - Cancel notification for unknown message id "46"
 [ 2025-07-06 02:44:03,893 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 48, "jsonrpc": "2.0", "result": []}
+[ 2025-07-06 02:44:44,541 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"params": {"uri": "file:///d%3A/Documents/VS%20Code%20workspace/NetworkSecurity/push_data.py", "diagnostics": []}, "method": "textDocument/publishDiagnostics", "jsonrpc": "2.0"}
+[ 2025-07-06 02:49:11,543 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 49, "jsonrpc": "2.0", "result": []}
+[ 2025-07-06 02:49:13,919 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"params": {"uri": "file:///d%3A/Documents/VS%20Code%20workspace/NetworkSecurity/networksecurity/pipeline/training_pipeline.py", "diagnostics": []}, "method": "textDocument/publishDiagnostics", "jsonrpc": "2.0"}
+[ 2025-07-06 02:49:14,953 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 50, "jsonrpc": "2.0", "result": []}
+[ 2025-07-06 13:25:56,173 ] 387 pygls.protocol.json_rpc - INFO - Sending data: {"id": 51, "jsonrpc": "2.0", "result": []}
