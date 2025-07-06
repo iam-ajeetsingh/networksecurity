@@ -110,7 +110,7 @@ Note : for connecting to S3 Bucket we are not using S3fs or Boto3 libraries , in
 
 
 ### Step 8 : Creating a Docker Image and Pushing it to AWS ECR and Deploying it as a container in Amazon EC2 Instance using GitHub Actions CI/CD pipeline:
-   - 1. Creating a Docker Image 
+   - 1. Creating a Docker Image file
       - pulled python:3.10-slim-buster base image 
       - installed aws CLI and other requirements.txt dependencies 
       - running the command : "python app.py" to run the app.py file.
@@ -123,7 +123,20 @@ Note : for connecting to S3 Bucket we are not using S3fs or Boto3 libraries , in
             - README.md
             - app.py
 
-   - 3. 
+   - 3.  Created an AWS Private Elastic Container Registry(ECR) repository named "networksecurity".
+         - build-and-push-ecr-image using Continuous Delivery
+         - Install Utilities
+         - Configure AWS credentials 
+               - Access_Key
+               - Secret Access_Key
+               - AWS_Region
+               - ECR_LOGIN_URI
+               - ECR_REPOSITORY_NAME
+            
+            For this Configuring AWS Credential we need to create 5 Secrets in Github-Actions:
+            To do this got to -> Github Repo Settings --> Secrets and Variables --> Actions --> Repository Secrets -> new repo secret.
+         - Login to Amazon ECR 
+
 
 
    
