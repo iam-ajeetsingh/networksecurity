@@ -1,6 +1,9 @@
+# File: .github/workflows/main.yml
+
 name: workflow
 
 on:
+    workflow_dispatch:  # Allows manual triggering of the workflow
     push:
         branches:
             - main

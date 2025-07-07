@@ -187,7 +187,12 @@ Note: Make sure the following things :
    - 2. add the inboud rule in EC2 instance for custom TCP , Port : 8080 (as given in workflow docker file)
    - 3. make sure the action runner script is running in EC2 instance. i.e. run.sh. This script runs the self-hosted runner which listen to the deployment of image on EC2. Continuous Deployment part will run only when this runner is running on EC2 instance. 
 
-   
+
+Note : I faced error in deployment stage wherein the container was getting exited due to the authentication issue with dagshub server. it was looking for Oauth in browser but there is no way to do it in container. So fixed that part by removing the authentication line of code. 
+
+
+
+
 
    
 
