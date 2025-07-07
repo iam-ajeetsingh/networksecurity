@@ -7,7 +7,6 @@ on:
         paths-ignore:
             - .gitignore
             - README.md
-            - app.py
 
 jobs:
     integration:
@@ -75,7 +74,7 @@ jobs:
     Continuous-Deployment:
        name: Continuous Deployment(CD) - Deploy Docker Image to Amazon EC2 instance
        needs: build-and-push-ecr-image  # This job depends on the build-and-push-ecr-image job
-       runs-on: self-hosted  # Uses a self-hosted runner for deployment
+       runs-on: self-hosted  # Uses a self-hosted runner for deployment instead of GitHub-hosted runners and need to configure the self-hosted runner on your EC2 instance.
        steps:
          - name: Checkout
            uses: actions/checkout@v3
