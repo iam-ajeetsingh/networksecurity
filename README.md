@@ -185,6 +185,9 @@ Note : Where is the Docker Image Stored Before Being Pushed to ECR?
 Note: Make sure the following things : 
    - 1. make sure the host="0.0.0.0" not "localhost"
    - 2. add the inboud rule in EC2 instance for custom TCP , Port : 8080 (as given in workflow docker file)
+   - 3. make sure the action runner script is running in EC2 instance. i.e. run.sh. This script runs the self-hosted runner which listen to the deployment of image on EC2. Continuous Deployment part will run only when this runner is running on EC2 instance. 
+
+   
 
    
 
